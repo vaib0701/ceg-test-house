@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newaccor.css">
+</head>
+<body>
+    <button class="accordionggi">Geophysical Services</button>
+<div class="panel">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde est veniam!
+        Quibusdam suscipit consequatur quia quis ipsa iure? Cumque.</p>
+</div>
+
+<button class="accordionggi">Specialized Services</button>
+<div class="panel">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde est veniam!
+        Quibusdam suscipit consequatur quia quis ipsa iure? Cumque.</p>
+</div>
+
+<button class="accordionggi">Geotechnical Laboratory Testing</button>
+<div class="panel">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In unde est veniam!
+        Quibusdam suscipit consequatur quia quis ipsa iure? Cumque.</p>
+</div>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordionggi");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+</script>
+</body>
+</html>
